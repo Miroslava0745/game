@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<style type="text/css">
+	
+	.box{
+		position: absolute;
+		height: 100px;
+		width: 100px;
+	}
+
+</style>
+<body>
+
+	<div style="background: url(1.jpg); height:940px;  background-size: 100% 100%;" class="div1">
+		<div style="background: lightyellow; position:absolute; height: 200px; width: 200px;">
+			<h1>надо найти:</h1>
+			<ol>
+				<li class="li1">шляпа</li>
+				<li class="li2">снич</li>
+				<li class="li3">шарф</li>
+				<li class="li4">книга</li>
+				<li class="li5">метла</li>
+			</ol>
+		</div>
+		<button class="btn1" style="background: lightcoral;width: 200px;height: 40px;border-radius: 20px; position: absolute; top: 210px;">следующий уровень</button>
+		<div class="box box1" style="top:700px ;left:130px ; background: url(1.png);background-size: 100% 100%"></div>
+		<div class="box box2" style="top:200px ;left:560px ; background: url(3.png);background-size: 100% 100%"></div>
+		<div class="box box3" style="top:450px ;left:1020px ; background: url(2.png);background-size: 100% 100%"></div>
+		<div class="box box4" style="top:700px ;left:1500px ; background: url(4.png);background-size: 100% 100%"></div>
+		<div class="box box5" style="top:300px ;left:1710px ; background: url(5.png);background-size: 100% 100%"></div>
+	</div>
+
+	<div style="background: url(2.jpg); height:940px;  background-size: 100% 100%; display: none;" class="div2">
+		<div style="background: lightyellow; position:absolute; height: 200px; width: 200px;">
+			<h1>надо найти:</h1>
+			<ol>
+				<li class="li6">палочка</li>
+				<li class="li7">герб</li>
+				<li class="li8">зелье</li>
+				<li class="li9">сова</li>
+				<li class="li10">письмо</li>
+			</ol>
+		</div>
+		<button class="btn2" style="background: lightcoral;width: 200px;height: 40px;border-radius: 20px; position: absolute; top: 210px;">предыдущий уровень</button>
+		<button class="btn3" style="background: lightcoral;width: 200px;height: 40px;border-radius: 20px; position: absolute; top: 210px;">я всё нашёл!</button>
+		<div class="box box6" style="top:300px ;left:130px ; background: url(6.png);background-size: 100% 100%"></div>
+		<div class="box box7" style="top:500px ;left:560px ; background: url(8.png);background-size: 100% 100%"></div>
+		<div class="box box8" style="top:450px ;left:1020px ; background: url(7.png);background-size: 100% 100%"></div>
+		<div class="box box9" style="top:750px ;left:1350px ; background: url(9.png);background-size: 100% 100%"></div>
+		<div class="box box10" style="top:200px ;left:1600px ; background: url(10.png);background-size: 100% 100%"></div>
+	</div>
+	<div class="div3" style="display: none;">
+		<div style="display: flex;">
+			<h1 style="margin-left: auto; margin-right: auto;">ИГРА ПРОЙДЕНА!</h1>
+		</div>
+		<div style="display: flex;">
+			<h1 style="margin-left: auto; margin-right: auto;">Ты нашёл все предметы!</h1>
+		</div>
+		<div style="display: flex;">
+			<button style="width:160px; height:50px; background: lightcoral; border-radius: 10px; margin-right: auto; margin-left: auto;" class="btn4">Пройти игру ещё раз</button>
+		</div>
+		<div style="display:flex;">
+			<img src="2.jpeg" style="margin-left: auto; margin-right: auto; margin-top: 50px">
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		
+		document.querySelector(".box1").onclick = function(){
+			document.querySelector(".box1").style.display = "none"
+			document.querySelector(".li1").style.textDecoration = "line-through"
+		}
+		document.querySelector(".box2").onclick = function(){
+			document.querySelector(".box2").style.display = "none"
+			document.querySelector(".li2").style.textDecoration = "line-through"
+		}
+		document.querySelector(".box3").onclick = function(){
+			document.querySelector(".box3").style.display = "none"
+			document.querySelector(".li3").style.textDecoration = "line-through"
+		}
+		document.querySelector(".box4").onclick = function(){
+			document.querySelector(".box4").style.display = "none"
+			document.querySelector(".li4").style.textDecoration = "line-through"
+		}
+		document.querySelector(".box5").onclick = function(){
+			document.querySelector(".box5").style.display = "none"
+			document.querySelector(".li5").style.textDecoration = "line-through"
+		}
+		document.querySelector(".btn1").onclick = function(){
+			document.querySelector(".div1").style.display = "none"
+			document.querySelector(".div2").style.display = "block"
+		}
+		document.querySelector(".btn2").onclick = function(){
+			document.querySelector(".div2").style.display = "none"
+			document.querySelector(".div1").style.display = "block"
+		}
+		document.querySelector(".box6").onclick = function(){
+			document.querySelector(".box6").style.display = "none"
+			document.querySelector(".li6").style.textDecoration = "line-through"
+		}
+		document.querySelector(".box7").onclick = function(){
+			document.querySelector(".box7").style.display = "none"
+			document.querySelector(".li7").style.textDecoration = "line-through"
+		}
+		document.querySelector(".box8").onclick = function(){
+			document.querySelector(".box8").style.display = "none"
+			document.querySelector(".li8").style.textDecoration = "line-through"
+		}
+		document.querySelector(".box9").onclick = function(){
+			document.querySelector(".box9").style.display = "none"
+			document.querySelector(".li9").style.textDecoration = "line-through"
+		}
+		document.querySelector(".box10").onclick = function(){
+			document.querySelector(".box10").style.display = "none"
+			document.querySelector(".li10").style.textDecoration = "line-through"
+		}
+		document.querySelector(".btn3").onclick = function(){
+			document.querySelector(".div2").style.display = "none"
+			document.querySelector(".div3").style.display = "block"
+		}
+		document.querySelector(".btn4").onclick = function(){
+			document.querySelector(".div3").style.display = "none"
+			document.querySelector(".div1").style.display = "block"
+			document.querySelector(".li1").style.textDecoration = "none"
+			document.querySelector(".li2").style.textDecoration = "none"
+			document.querySelector(".li3").style.textDecoration = "none"
+			document.querySelector(".li4").style.textDecoration = "none"
+			document.querySelector(".li5").style.textDecoration = "none"
+			document.querySelector(".li6").style.textDecoration = "none"
+			document.querySelector(".li7").style.textDecoration = "none"
+			document.querySelector(".li8").style.textDecoration = "none"
+			document.querySelector(".li9").style.textDecoration = "none"
+			document.querySelector(".li10").style.textDecoration = "none"
+			document.querySelector(".box1").style.display = "block"
+			document.querySelector(".box2").style.display = "block"
+			document.querySelector(".box3").style.display = "block"
+			document.querySelector(".box4").style.display = "block"
+			document.querySelector(".box5").style.display = "block"
+			document.querySelector(".box6").style.display = "block"
+			document.querySelector(".box7").style.display = "block"
+			document.querySelector(".box8").style.display = "block"
+			document.querySelector(".box9").style.display = "block"
+			document.querySelector(".box10").style.display = "block"
+		}
+
+
+	</script>
+</body>
+</html>
